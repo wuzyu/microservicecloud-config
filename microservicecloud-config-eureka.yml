@@ -19,16 +19,16 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/
 ---
 server:
-  port: 7001
+  port: 7002
 spring:
   profiles: test
   application:
     name: microservicecloud-config-eureka
 eureka:
   instance:
-    hostname: eureka7001.com
+    hostname: eureka7002.com
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/
+      defaultZone: http://eureka7002.com:7002/eureka/
